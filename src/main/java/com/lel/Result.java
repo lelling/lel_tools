@@ -89,7 +89,7 @@ public class Result<T> implements java.io.Serializable{
 	 * @param status
 	 * @param msg
 	 */
-	private void fail(String status, String msg){
+	public void fail(String status, String msg){
 		this.setStatus(RStatus.FAIL.getStatus());
 		this.setMsg(msg);
 	}
